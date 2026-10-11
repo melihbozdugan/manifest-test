@@ -124,12 +124,30 @@ const quizData = [
 ];
 
 const resultProfiles = {
-    "Sueda": { desc: "Zarif, sofistike ve her ortamda görsel bir denge kuran sensin. Kuğu gibi asil bir duruşun var." },
-    "Hilal": { desc: "Cesur, asi ve sesi gür çıkan bir pantersin! Sahnede veya hayatta öne çıkmayı seviyorsun." },
-    "Lidya": { desc: "Sezgileri güçlü, duygusal ve ortamı yumuşatan kedi ruhlu birisin." },
-    "Zeynep Sude": { desc: "Bitmek bilmeyen bir enerjin var! Tıpkı bir dans makinesi gibi ortamı canlandırıyorsun." },
-    "Mina": { desc: "Net, disiplinli ve analitik zekaya sahipsin. Kartal gibi her şeyi yukarıdan görüp organize edersin." },
-    "Esin": { desc: "Orijinal, farklı ve her zaman yenilikçi! Alışılmışın dışında düşünüyor, özgürce kendi rotanı çiziyorsun." }
+    "Sueda": {
+        desc: "Zarif, sofistike ve her ortamda görsel bir denge kuran sensin. Kuğu gibi asil bir duruşun var.",
+        image: "img/sonuc-sueda.jpeg" // Veya .png ise burayı değiştir
+    },
+    "Hilal": {
+        desc: "Cesur, asi ve sesi gür çıkan bir pantersin! Sahnede veya hayatta öne çıkmayı seviyorsun.",
+        image: "img/sonuc-hilal.jpeg"
+    },
+    "Lidya": {
+        desc: "Sezgileri güçlü, duygusal ve ortamı yumuşatan kedi ruhlu birisin.",
+        image: "img/sonuc-lidya.jpeg"
+    },
+    "Zeynep Sude": {
+        desc: "Bitmek bilmeyen bir enerjin var! Tıpkı bir dans makinesi gibi ortamı canlandırıyorsun.",
+        image: "img/sonuc-zeynep.jpeg"
+    },
+    "Mina": {
+        desc: "Net, disiplinli ve analitik zekaya sahipsin. Kartal gibi her şeyi yukarıdan görüp organize edersin.",
+        image: "img/sonuc-mina.jpeg"
+    },
+    "Esin": {
+        desc: "Orijinal, farklı ve her zaman yenilikçi! Alışılmışın dışında düşünüyor, özgürce kendi rotanı çiziyorsun.",
+        image: "img/sonuc-esin.jpeg"
+    }
 };
 
 let currentQuestionIndex = 0;
