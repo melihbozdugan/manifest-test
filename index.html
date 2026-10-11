@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hangi Manifest Kızısın?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app-container">
+    <!-- 1. KARŞILAMA EKRANI -->
+    <div id="landing-screen" class="screen active">
+        <h1 class="logo-title">MANIFEST</h1>
+        <p class="subtitle">Hangi Manifest Kızısın?</p>
+        <button class="btn-primary" id="start-btn">Teste Başla</button>
+    </div>
+
+    <!-- 2. SORU EKRANI -->
+    <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+            <button id="back-btn" class="back-button">← Geri</button>
+            <div id="question-counter" style="margin-bottom: 0;">Soru 1 / 10</div>
+        </div>
+        <div class="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <img id="question-image" class="question-image" src="" alt="Soru Görseli">
+        <h2 id="question-text" class="question-text">Soru metni buraya gelecek</h2>
+
+        <div id="options-container" class="options-grid">
+            <!-- Şıklar JS ile buraya yüklenecek -->
+        </div>
+    </div>
+
+    <!-- YÜKLENİYOR EKRANI -->
+    <div id="loading-overlay" class="screen">
+        <div class="spinner"></div>
+        <p style="margin-top: 15px; color: var(--text-muted);">Auran analiz ediliyor...</p>
+    </div>
+
+    <!-- 3. SONUÇ EKRANI -->
+    <div id="result-screen" class="screen">
+        <p class="result-subtitle">Senin Manifest Ruh İkizin</p>
+        <h1 id="result-name">İsim</h1>
+        <img id="result-image" src="" alt="Sonuç">
+        <p id="result-desc">Açıklama</p>
+
+        <button class="btn-primary" onclick="location.reload()" style="margin-top: 20px;">Testi Tekrar Çöz</button>
+    </div>
+</div>
+
+<!-- type="module" olarak ekliyoruz çünkü Firebase kullanacağız -->
+<script type="module" src="script.js"></script>
+</body>
+</html>
