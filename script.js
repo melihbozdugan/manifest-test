@@ -225,12 +225,12 @@ function calculateAndShowResult() {
 
     let topKarakter = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
 
-    // TODO: Burada Firebase'e kaydetme işlemi yapılacak. Şu anlık atlıyoruz.
-
     setTimeout(() => {
         switchScreen('loading-overlay', 'result-screen');
         document.getElementById('result-name').innerText = topKarakter;
         document.getElementById('result-desc').innerText = resultProfiles[topKarakter].desc;
-        document.getElementById('result-image').src = `https://picsum.photos/400/400?random=999`; // Sonuç resmi
+
+        // DİKKAT: Resim artık picsum'dan değil, senin klasöründen (resultProfiles'dan) çekiliyor
+        document.getElementById('result-image').src = resultProfiles[topKarakter].image;
     }, 2000);
 }
